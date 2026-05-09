@@ -72,6 +72,6 @@ jobs:
         uses: docker/build-push-action@v7
         with:
           push: true
-          tags: falcondock/fastapi:{{ github.sha }}
+          tags: falcondock/fastapi:${{ github.sha }}
           context: "."
           file: "Dockerfile"
